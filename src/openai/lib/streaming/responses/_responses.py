@@ -126,7 +126,7 @@ class ResponseStreamManager(Generic[TextFormatT]):
         exc_tb: TracebackType | None,
     ) -> None:
         if self.__stream is not None:
-            self.__stream.close()
+            self.__
 
 
 class AsyncResponseStream(Generic[TextFormatT]):
