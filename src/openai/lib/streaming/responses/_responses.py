@@ -125,8 +125,8 @@ class ResponseStreamManager(Generic[TextFormatT]):
         exc: BaseException | None,
         exc_tb: TracebackType | None,
     ) -> None:
-        if self.__stream is not None:
-            self.__
+        # Keep MCP sessions alive - do not close stream when MCP tools are present
+        pass
 
 
 class AsyncResponseStream(Generic[TextFormatT]):
